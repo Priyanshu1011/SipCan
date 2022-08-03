@@ -1,0 +1,45 @@
+body {
+    background-color: #ffff99;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+nav {
+    background-color: transparent;
+    margin: 2% 7%;
+}
+
+.brand {
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #a200ff;
+}
+
+.nav-font {
+    color: #2e00b9;
+    font-size: 1.1rem;
+}
+
+.insta-icon {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin-left: 1%;
+}
+
+.lemon-lavender {
+    background-color: #ffff99;
+    padding: 3% 20%;
+}
+
+.blood-orange-cardamom {
+    background-color: #ffcc80;
+    padding: 3% 20%;
+}
+
+.grapefruit-rosemary {
+    background-color: #ffccff;
+    padding: 3% 20%;
+}
