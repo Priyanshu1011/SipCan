@@ -1,11 +1,58 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #ffff99;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #ffff44;
+    /* background-image: linear-gradient(#ffff99, #ffff44); */
     font-family: "Roboto";
-    text-align: center;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    /* text-align: center; */
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+img {
+    position: relative;
+    z-index: 10;
+    transform: rotate3d(90deg);
 }
 
 nav {
-    background-color: transparent;
+    /* background-color: transparent; */
+    /* background-image: linear-gradient(#ffff99, #ffff44); */
     margin: 2% 7%;
 }
 
@@ -29,17 +76,141 @@ nav {
     margin-left: 1%;
 }
 
+.description {
+    font-size: 1.3rem;
+    font-weight: 700;
+    float: right;
+    margin-top: 15%;
+    position: relative;
+    right: 5%;
+}
+
+.features-table {
+    clear: both;
+}
+
 .lemon-lavender {
-    background-color: #ffff99;
-    padding: 3% 20%;
+    /* background-color: #ffff99; */
+    background-image: linear-gradient(#ffff44, #ffcc80);
+    padding: 5% 15%;
+    color: #000099;
+}
+
+.lemon-can-image {
+    float: left;
+    margin: 7%;
 }
 
 .blood-orange-cardamom {
-    background-color: #ffcc80;
-    padding: 3% 20%;
+    /* background-color: #ffcc80; */
+    background-image: linear-gradient(#ffcc80, #ff9999);
+    padding: 5% 15%;
+    color: #cc0000;
+}
+
+.orange-can-image {
+    float: left;
+    margin: 7%;
+}
+
+.natural-text {
+    color: #cc0000;
+    background-color: #ff9999;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .grapefruit-rosemary {
-    background-color: #ffccff;
-    padding: 3% 20%;
+    /* background-color: #ffb3b3; */
+    background-image: linear-gradient(#ff9999, #e6b3ff);
+    padding: 6% 15%;
+    color: #248f8f;
+}
+
+.grapefruit-can-image {
+    float: left;
+    margin: 7%;
+}
+
+footer {
+    /* font-size: 2rem; */
+    font-weight: 400;
+    text-align: center;
+    background-image: linear-gradient(#e6b3ff, #6699ff);
+    margin: 0;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    color: #cc0000;
+}
+
+.footer {
+    font-size: 1rem;
+}
+
+span {
+    width: 40%;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* margin-left: -50px;
+    margin-top: -30px; */
+    position: absolute;
+
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0px, 5px);
+    }
+
+    50% {
+        transform: translate(0px, 3500px);
+    }
+
+    100% {
+        transform: translate(0px, -100px);
+    }
+}
+
+/* .bubble-1 {
+    position: absolute;
+    left: 1000px;
+} */
+
+/* .rotate {
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+} */
+
+@keyframes spin3D {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(359deg);
+        /* transform: rotate3d(1, 3, 1, 300deg); */
+    }
+}
+
+/* .spinhov3D:hover */
+.rotate {
+    animation-name: spin3D;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    /* linear | ease | ease-in | ease-out | ease-in-out */
+    animation-timing-function: linear;
 }
