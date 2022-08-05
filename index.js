@@ -36,3 +36,6 @@ reveal();
 // }, function(){
 //     $(this).removeClass("heading-thickness");
 // });
+
+var audio = document.getElementById("bg-audio");
+audio.volume = 0.01;
